@@ -26,6 +26,8 @@
 		68AA584326B3D01300336E72 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AA583E26B3D01300336E72 /* DeviceInfo.m */; };
 		68AA584426B3D57000336E72 /* MTKDeviceParameterRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AA583626B3D01300336E72 /* MTKDeviceParameterRecorder.m */; };
 		68AA584526B3D57000336E72 /* CachedBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AA583A26B3D01300336E72 /* CachedBLEDevice.m */; };
+		68AA585226B40AB400336E72 /* Business-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 68AA585126B40AB400336E72 /* Business-Bridging-Header.h */; };
+		68AA585626B40B6600336E72 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AA585526B40B6600336E72 /* QMUIConfigurationTemplate.m */; };
 		68B32A2D222CFC230068AFAA /* Business.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B32A2B222CFC230068AFAA /* Business.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68B32A30222CFC230068AFAA /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B32A29222CFC230068AFAA /* Business.framework */; };
 		68B32A31222CFC230068AFAA /* Business.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68B32A29222CFC230068AFAA /* Business.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -187,6 +189,9 @@
 		68AA583C26B3D01300336E72 /* BLEManagerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BLEManagerModel.xcdatamodel; sourceTree = "<group>"; };
 		68AA583D26B3D01300336E72 /* DeviceParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceParameter.m; sourceTree = "<group>"; };
 		68AA583E26B3D01300336E72 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		68AA585126B40AB400336E72 /* Business-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Business-Bridging-Header.h"; sourceTree = "<group>"; };
+		68AA585426B40B6600336E72 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		68AA585526B40B6600336E72 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
 		68B32A29222CFC230068AFAA /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B32A2B222CFC230068AFAA /* Business.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
 		68B32A2C222CFC230068AFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -405,6 +410,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		68AA585326B40B6600336E72 /* QMUIConfigurationTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				68AA585426B40B6600336E72 /* QMUIConfigurationTemplate.h */,
+				68AA585526B40B6600336E72 /* QMUIConfigurationTemplate.m */,
+			);
+			path = QMUIConfigurationTemplate;
+			sourceTree = "<group>";
+		};
 		68B32A2A222CFC230068AFAA /* Business */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +428,7 @@
 				68B32A50222CFF2A0068AFAA /* SZLoginView.swift */,
 				686228E1222D5A8100D2DA76 /* SZRigisterViewController.swift */,
 				686228E3222D5ABD00D2DA76 /* SZRigisterView.swift */,
+				68AA585126B40AB400336E72 /* Business-Bridging-Header.h */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -461,6 +476,7 @@
 		68F8CE1F21D612B200F557FB /* ProjectTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				68AA585326B40B6600336E72 /* QMUIConfigurationTemplate */,
 				68AA57C826B25F8D00336E72 /* inlcude */,
 				68F8CE4A21D61CC600F557FB /* Service */,
 				68F8CE2021D612B200F557FB /* AppDelegate.swift */,
@@ -544,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B32A2D222CFC230068AFAA /* Business.h in Headers */,
+				68AA585226B40AB400336E72 /* Business-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +706,7 @@
 				TargetAttributes = {
 					68B32A28222CFC230068AFAA = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 					};
 					68B32A3B222CFCE90068AFAA = {
 						CreatedOnToolsVersion = 10.1;
@@ -909,6 +926,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68AA584426B3D57000336E72 /* MTKDeviceParameterRecorder.m in Sources */,
+				68AA585626B40B6600336E72 /* QMUIConfigurationTemplate.m in Sources */,
 				68AA584526B3D57000336E72 /* CachedBLEDevice.m in Sources */,
 				68F8CE5921D747C100F557FB /* SZView.swift in Sources */,
 				68F8CE4F21D6229E00F557FB /* NetworkService.swift in Sources */,
@@ -1016,6 +1034,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1048,6 +1067,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
