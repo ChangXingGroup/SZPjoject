@@ -7,10 +7,6 @@
 		<key>login</key>
 		<string>login</string>
 	</dict>
-	<key>timeoutInterval</key>
-	<integer>60</integer>
-	<key>serverBaseURL</key>
-	<string>http://prod.server.com/api/</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -50,5 +46,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>serverBaseURL</key>
+	<string>http://prod.server.com/api/</string>
+	<key>timeoutInterval</key>
+	<integer>60</integer>
 </dict>
 </plist>
